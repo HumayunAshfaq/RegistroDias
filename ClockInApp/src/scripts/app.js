@@ -85,8 +85,27 @@ document.addEventListener('DOMContentLoaded', () => {
         return filteredRecords;
     }
 
+    const countModal = document.createElement('div'); // Create custom modal
+    countModal.classList.add('modal');
+    countModal.innerHTML = `
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Total de Días Trabajados</h2>
+            <p id="countMessage"></p>
+        </div>
+    `;
+    document.body.appendChild(countModal);
+
+    const countMessage = document.getElementById('countMessage');
+    const countModalClose = countModal.querySelector('.close');
+
+    countModalClose.addEventListener('click', () => {
+        countModal.style.display = 'none';
+    });
+
     function showCount() {
         const filteredRecords = filterRecords();
-        alert(`Total de días trabajados: ${filteredRecords.length}`);
+        countMessage.textContent = `Total de días trabajados: ${filteredRecords.length}`;
+        countModal.style.display = 'flex'; // Show custom modal
     }
 });
