@@ -12,7 +12,7 @@ This project is a simple mobile-friendly application that allows users to clock 
 ## Setup Instructions
 
 1. Clone the repository or download the project files.
-2. Open the `src/index.html` file in a web browser.
+2. Open the `index.html` file in a web browser.
 3. The application will run locally without any additional setup.
 
 ## Usage Guidelines
