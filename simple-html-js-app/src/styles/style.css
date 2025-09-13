@@ -1,0 +1,119 @@
+body {
+    font-family: 'Roboto', Arial, sans-serif; /* Changed font */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e9ecef; /* Slightly lighter background */
+}
+
+.container {
+    text-align: center;
+    background: #ffffff;
+    padding: 30px; /* Increased padding */
+    border-radius: 15px; /* More rounded corners */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Stronger shadow */
+    width: 90%;
+    max-width: 400px;
+    height: auto; /* Adjusted height */
+}
+
+h1 {
+    color: #222; /* Darker text */
+    margin-bottom: 25px; /* Increased spacing */
+    font-size: 24px; /* Larger font size */
+}
+
+button {
+    display: block;
+    width: 100%;
+    margin: 15px 0; /* Increased margin */
+    padding: 12px; /* Larger padding */
+    font-size: 18px; /* Larger font size */
+    border: none;
+    border-radius: 8px; /* More rounded corners */
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+select {
+    width: 100%;
+    padding: 12px; /* Larger padding */
+    margin: 15px 0; /* Increased margin */
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px; /* More rounded corners */
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Darker overlay */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it appears above other elements */
+}
+
+.modal-content {
+    background: #ffffff;
+    padding: 25px; /* Increased padding */
+    border-radius: 15px; /* More rounded corners */
+    width: 90%;
+    max-width: 450px; /* Slightly larger modal */
+    text-align: center;
+    position: relative;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Stronger shadow */
+    font-family: 'Roboto', Arial, sans-serif; /* Consistent font */
+}
+
+.modal-content h2 {
+    margin-top: 0;
+    font-size: 22px; /* Larger font size */
+    color: #333; /* Darker text */
+}
+
+.modal-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0; /* Added spacing */
+}
+
+.modal-content li {
+    padding: 8px 0; /* Increased padding */
+    border-bottom: 1px solid #ddd; /* Softer border */
+    font-size: 16px; /* Larger font size */
+}
+
+.close {
+    position: absolute;
+    top: 15px; /* Adjusted position */
+    right: 15px; /* Adjusted position */
+    font-size: 24px; /* Larger font size */
+    cursor: pointer;
+    color: #555; /* Softer color */
+    transition: color 0.3s ease;
+}
+
+.close:hover {
+    color: #000; /* Darker on hover */
+}
+
+#clockInBtn {
+    background-color: #28a745;
+    height: 130px;
+    font-size: 20px; /* Larger font size */
+    font-weight: bold; /* Bold text */
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Días trabajados</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Días trabajados</h1>
+        <button id="clockInBtn">Registrar Entrada</button>
+        <button id="viewRecordsBtn">Ver Registros</button>
+        <select id="filterMenu">
+            <option value="all">Todos los Registros</option>
+            <option value="today">Hoy</option>
+            <option value="week">Esta Semana</option>
+            <option value="month">Este Mes</option>
+        </select>
+        <button id="countDaysBtn">Mostrar Conteo</button>
+        <button id="clearDataBtn">Borrar Todos los Datos</button>
+    </div>
+
+    <div id="recordsModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Días Registrados</h2>
+            <ul id="recordsList"></ul>
+        </div>
+    </div>
+
+    <script src="scripts/app.js"></script>
+</body>
+</html>
